@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family= Roboto :wght@400;500;700;900 & display=swap");
+
+:root {
+  --black01: #000000;
+  --blueBlue: #132144;
+  --dark-blue: #000614;
+  --red-dark: #4d0005;
+  --red: #e50914;
+  --redColor: #aa0009;
+  --neve: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--black01);
+  height: 300vh;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  transition: all 1s ease-in-out;
+}
+
+header.rolagem {
+  background: var(--black01);
+  filter: opacity(90%);
+}
+
+header.rolagem .logo h2 {
+  transition: all 1s ease-in-out;
+  color: var(--red);
+}
+
+.cont-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo a img {
+  width: 60px;
+}
+
+.logo h2 {
+  color: var(--neve);
+  cursor: pointer;
+}
+
+.button-log a {
+  text-decoration: none;
+  background: var(--red);
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--neve);
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-log a:hover {
+  background: var(--redColor);
+}
+
+/* --- conteudo main --- */
+
+.cont-main {
+  display: flex;
+}
+
+.cont-main .box-main {
+  display: flex;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  animation: MainShow 45s infinite ease-in-out;
+}
+/* --- animação showMain --- */
+@keyframes MainShow {
+  0%,
+  100% {
+    background: url(../assets/img/bkg1.png) no-repeat;
+    background-size: cover;
+  }
+
+  25% {
+    background: url(../assets/img/bkg2.png) no-repeat;
+    background-size: cover;
+  }
+
+  50% {
+    background: url(../assets/img/bkg3.png) no-repeat;
+    background-size: cover;
+  }
+
+  75% {
+    background: url(../assets/img/bkg2.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+.cont-main .text-main {
+  margin-top: 80px;
+  align-items: flex-start;
+  padding: 50px;
+}
+
+.cont-main .text-main h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.cont-main .text-main h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.cont-main .text-main p {
+  color: #ffffff;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.btn-reg i{
+  font-size: 2.5rem;
+  align-items: center;
+  position: relative;
+  top: 9px;
+}
+
+.btn-reg {
+  text-decoration: none;
+  border: none;
+  background: var(--red);
+  padding: 13px 40px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+  margin-left: 5px;
+  position: relative;
+  top: 15px;
+}
+
+.btn-reg:hover {
+  background: #aa0009;
+  cursor: pointer;
+}
+

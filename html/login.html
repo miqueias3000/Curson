@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Curson - Login</title>
+</head>
+<body>
+    
+    <div class="caontainer-pre">
+        <header id="header">
+            <div class="cont-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../assets/img/logo.png"/>
+                        <h2>Curson</h2>
+                    </a>                
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="box">
+                <div class="cont-box">
+                    <h1>Entrar<i class="bi bi-box-arrow-in-right"></i></h1>
+                    <div class="inputs">
+                        <input autocomplete="off" type="email" id="email" placeholder="Email" required>        
+                        <input autocomplete="off" type="password" id="senha" placeholder="Senha" required>
+                        <i class="bi bi-eye" id="iconEye" onclick="showhide()"></i>
+                    </div>
+                    <div id="res"></div>
+                    <button id="btn-login">Login</button>
+                            
+                    <div class="check-Reg">
+                        <input id="lembrar" type="checkbox"><label for="lembrar">Lembrar-me</label>   
+                        <a href="../html/register.html">Cadastrar-se</a>             
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="../script/login.js"></script>
+    <script src="../script/index.js"></script>
+</body>
+</html>

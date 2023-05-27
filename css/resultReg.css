@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family= Roboto :wght@400;500;700;900 & display=swap");
+
+:root {
+  --black01: #000000;
+  --blueBlue: #132144;
+  --dark-blue: #000614;
+  --red-dark: #4d0005;
+  --red: #e50914;
+  --redColor: #aa0009;
+  --neve: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: url(../assets/img/bkgLog.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    transition: all 1s ease-in-out;
+  }
+  
+  
+.cont-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+  
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+  
+.logo a img {
+    width: 60px;
+}
+  
+.logo h2 {
+    color: var(--neve);
+    cursor: pointer;
+}
+
+/*-- Conteudo --*/
+
+.container{
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+.container .box-result{
+    background: #ffdadc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px #000614;
+}
+
+.container .box-result .box-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .box-result .box-text h1{
+    text-align: center;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/HomePage.css">
+
+    <title>Home Page</title>
+</head>
+<body onload="loading()">
+    <div class="preloand">
+        <div class="cicle"></div>
+    </div>
+    <div class="bodyContent">
+<!--Conteudo Header-->
+        <header id="header">
+            <div class="cont-header">
+                <div class="logo">
+                    <a href="#">
+                        <img src="../assets/img/logo.png"/>
+                        <h2>Curson</h2>
+                    </a>                
+                </div>
+
+                <div class="menu-icon">
+                    <button id="logout-btn">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </button>                
+                </div>
+            </div>
+        </header>
+        <nav class="nav-cont">  
+            <div class="menuExpandir">
+                <i class="bi bi-list" id="btn-menu"></i>
+            </div>    
+            <ul>
+                <li class="item-menu ativo">
+                    <a href="#">
+                        <span class="icon-link"><i class="bi bi-house"></i></span>
+                        <span class="text-link">Home</span>
+                    </a>
+                </li><!--home-->
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon-link"><i class="bi bi-person-circle"></i></span>
+                        <span class="text-link">Conta</span>
+                    </a>
+                </li><!--minha conta-->
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon-link"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="text-link">Pesquisar</span>
+                    </a>
+                </li><!--pequisa-->
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon-link"><i class="bi bi-mortarboard"></i></span>
+                        <span class="text-link">Cursos</span>
+                    </a>
+                </li><!--meus cursos-->
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon-link"><i class="bi bi-chat-right-dots"></i></span>
+                        <span class="text-link">FAQ</span>
+                    </a>
+                </li><!--faq-->
+            </ul>
+
+        </nav>
+<!--Conteudo Main-->
+        <main class="conatinerMain">
+            <div class="bannerMain">
+                <img src="../assets/img/bkg2.png" alt="bkgMarketing">
+            </div>
+            <div class="textBox">
+                <h1>Marketing Digital</h1>
+                <h4>
+                    <span>40horas</span>
+                    <span>|</span>
+                    <span>Marketing</span>
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius recusandae id incidunt, numquam exercitationem ullam aperiam quisquam unde asperiores odiaio</p>
+                <button><i class="bi bi-collection-play"></i>Assistir Aula</button>
+                <button class="fav"><i class="bi bi-bookmark-plus"></i></button>
+            </div>
+        </main>
+<!--categoria destaque-->
+        <section class="slideCarrossel">
+            <div>
+                <button class="arrow-left control" aria-label="PreviousImage"><i class="bi bi-caret-left-fill"></i></button>
+
+                <button class="arrow-right control" aria-label="nextImage"><i class="bi bi-caret-right-fill"></i></button>
+            </div>
+            <div class="gallery-wrapper">
+                <span>Destaques</span>
+                <div class="gallery">
+                    <a href="#"><img src="../assets/img/dev-game.png" alt="cursoGame" class="itemImg currentItem"></a>
+
+                    <a href="#"><img src="../assets/img/dev-ios.png" alt="curso devIos" class="itemImg"></a>
+
+                    <a href="#"><img src="../assets/img/ingles.jpg" alt="cursoIngles" class="itemImg"></a>
+
+                    <a href="#"><img src="../assets/img/mkt-digital.jpg" alt="cursoMkt" class="itemImg"></a>
+
+                    <a href="#"><img src="../assets/img/violao.webp" alt="curso de  game" class="itemImg"></a>
+
+                    <a href="#"><img src="../assets/img/tecnica-vocal.jpg" alt="curso de  game" class="itemImg"></a>
+
+                    <a href="#"><img src="../assets/img/seg-finan.png" alt="curso de  game" class="itemImg"></a>
+                </div>
+            </div>        
+        </section>
+<!--categoria marketing-->
+        <section class="slideCarrossel">
+            <div>
+                <button class="arrow-left contole" aria-label="PreviousImage"><i class="bi bi-caret-left-fill"></i></button>
+
+                <button class="arrow-right controle" aria-label="nextImage"><i class="bi bi-caret-right-fill"></i></button>
+            </div>
+            <div class="gallery-wrapper">
+                <span>Marketing</span>
+                <div class="gallery">
+                    <a href="#"><img src="../assets/img/dev-game.png" alt="cursoGame" class="itemImg itemImg1 currentItem"></a>
+
+                    <a href="#"><img src="../assets/img/dev-ios.png" alt="curso devIos" class="itemImg itemImg1"></a>
+
+                    <a href="#"><img src="../assets/img/ingles.jpg" alt="cursoIngles" class="itemImg itemImg1"></a>
+
+                    <a href="#"><img src="../assets/img/mkt-digital.jpg" alt="cursoMkt" class="itemImg itemImg1"></a>
+
+                    <a href="#"><img src="../assets/img/violao.webp" alt="curso de  game" class="itemImg itemImg1"></a>
+
+                    <a href="#"><img src="../assets/img/tecnica-vocal.jpg" alt="curso de  game" class="itemImg itemImg1"></a>
+
+                    <a href="#"><img src="../assets/img/seg-finan.png" alt="curso de  game" class="itemImg itemImg1"></a>
+                </div>
+            </div>        
+        </section>
+<!--categoria Favoritos-->
+        <section class="slideCarrossel">
+            <div>
+                <button class="arrow-left controle-001" aria-label="PreviousImage"><i class="bi bi-caret-left-fill"></i></button>
+
+                <button class="arrow-right controle-001" aria-label="nextImage"><i class="bi bi-caret-right-fill"></i></button>
+            </div>
+            <div class="gallery-wrapper">
+                <span>Favoritos</span>
+                <div class="gallery">
+                    <a href="#"><img src="../assets/img/dev-game.png" alt="cursoGame" class="itemImg itemImg2 currentItem"></a>
+
+                    <a href="#"><img src="../assets/img/dev-ios.png" alt="curso devIos" class="itemImg itemImg2"></a>
+
+                    <a href="#"><img src="../assets/img/ingles.jpg" alt="cursoIngles" class="itemImg itemImg3"></a>
+
+                    <a href="#"><img src="../assets/img/mkt-digital.jpg" alt="cursoMkt" class="itemImg itemImg3"></a>
+
+                    <a href="#"><img src="../assets/img/violao.webp" alt="curso de  game" class="itemImg itemImg3"></a>
+
+                    <a href="#"><img src="../assets/img/tecnica-vocal.jpg" alt="curso de  game" class="itemImg itemImg3"></a>
+
+                    <a href="#"><img src="../assets/img/seg-finan.png" alt="curso de  game" class="itemImg itemImg3"></a>
+                </div>
+            </div>        
+        </section>
+<!--categoria destaque-->
+        <section class="slideCarrossel">
+            <div>
+                <button class="arrow-left control-1" aria-label="PreviousImage"><i class="bi bi-caret-left-fill"></i></button>
+
+                <button class="arrow-right control-1" aria-label="nextImage"><i class="bi bi-caret-right-fill"></i></button>
+            </div>
+            <div class="gallery-wrapper">
+                <span>Marketing</span>
+                <div class="gallery">
+                    <a href="#"><img src="../assets/img/dev-game.png" alt="cursoGame" class="itemImg itemImg3 currentItem"></a>
+
+                    <a href="#"><img src="../assets/img/dev-ios.png" alt="curso devIos" class="itemImg itemImg3"></a>
+
+                    <a href="#"><img src="../assets/img/ingles.jpg" alt="cursoIngles" class="itemImg itemImg3"></a>
+
+                    <a href="#"><img src="../assets/img/mkt-digital.jpg" alt="cursoMkt" class="itemImg itemImg3"></a>
+
+                    <a href="#"><img src="../assets/img/violao.webp" alt="curso de  game" class="itemImg itemImg3"></a>
+
+                    <a href="#"><img src="../assets/img/tecnica-vocal.jpg" alt="curso de  game" class="itemImg itemImg3"></a>
+
+                    <a href="#"><img src="../assets/img/seg-finan.png" alt="curso de  game" class="itemImg itemImg3"></a>
+                </div>
+            </div>        
+        </section>
+        <footer>
+            <div class="footerContainer">
+                <span>Feito por MikeiasDeveloper | 2023</span>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="../script/login.js"></script>
+    <script type="module" src="../script/auth.js"></script>
+    <script type="module" src="../script/authGuard.js"></script>
+    <script src="../script/HomePage.js"></script>
+
+</body>
+</html>

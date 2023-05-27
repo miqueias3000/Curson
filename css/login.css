@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family= Roboto :wght@400;500;700;900 & display=swap");
+
+:root {
+  --black01: #000000;
+  --blueBlue: #132144;
+  --dark-blue: #000614;
+  --red-dark: #4d0005;
+  --red: #e50914;
+  --redColor: #aa0009;
+  --neve: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: url(../assets/img/bkgLog.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    transition: all 1s ease-in-out;
+}
+  
+.cont-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+  
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+  
+.logo a img {
+    width: 60px;
+}
+  
+.logo h2 {
+    color: var(--neve);
+    cursor: pointer;
+}
+  
+/*-- seção Login --*/  
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .box{
+    height: 300px;
+    width: 250px;
+    position: relative;
+    margin: 0 auto;
+    top: 70px;
+
+
+}
+
+.container .box .cont-box{
+    position: relative;
+}
+
+.container .box .cont-box h1{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2.3rem;
+}
+
+.container .box .cont-box #email, #senha{
+    border: none;
+    background: none;
+    border: solid 1px white;
+    border-radius: 20px;
+    padding: 10px 27px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 1.1rem;
+    outline: 0;
+}
+
+#iconEye{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 49%;
+    right: 0;
+    transform: translateY(-50%);
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    color: rgb(248, 248, 248);
+}
+
+.container .box .cont-box #btn-login {
+    border: none;
+    padding: 10px 110px;
+    position: relative;
+    border-radius: 20px;
+    color: var(--red-dark);
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.container .box .cont-box #btn-login:hover{
+    background: var(--redColor);
+    color: white;
+}
+
+.container .box .cont-box #res{
+    position: relative;
+    margin-bottom: 10px;
+    color: #dbdbdb;
+}
+
+.container .box .cont-box .check-Reg{
+    position: relative;
+    margin-top: 15px;
+    color: #afafaf;
+    padding: 5px;
+}
+
+.container .box .cont-box .check-Reg label{
+    position: relative;
+    margin-left: 7px;
+}
+
+.container .box .cont-box .check-Reg a{
+    position: relative;
+    left: 65px;
+    color: #afafaf;
+}
